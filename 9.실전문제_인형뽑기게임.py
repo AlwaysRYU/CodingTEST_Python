@@ -19,24 +19,46 @@ def solution(board, moves):
     resultlist = []
 
     for i in moves:
-        j = 0
         for j in range(len(board)):
             #5번 반복 
-            if board[i-1][j] != 0 :
+            if board[j][i-1] != 0 :
                 if len(resultlist) < 1 :
-                    resultlist.append(board[i-1][j])
+                    resultlist.append(board[j][i-1])
+                    board[j][i-1] = 0
                     break
                 else :
                     temp = resultlist.pop()
-                    if temp == board[i-1][j] :
+                    if temp == board[j][i-1] :
                         # 터질 경우
+                        board[j][i-1] = 0
                         answer += 2
                         break
                     else :
                         resultlist.append(temp) #뺐던거 넣어주고
-                        resultlist.append(board[i-1][j]) #이번것도 넣고
+                        resultlist.append(board[j][i-1]) #이번것도 넣고
+                        board[j][i-1] = 0
                         break  
                 
     return answer
 
 print(solution(board,moves))
+
+# 다른 사람의풀이
+def solution2(board, moves):
+    stacklist = []
+    answer = 0
+
+    for i in moves:
+        for j in range(len(board)):
+            if board[j][i-1] != 0:
+                stacklist.append(board[j][i-1])
+                board[j][i-1] = 0
+
+                if len(stacklist) > 1:
+                    if stacklist[-1] == stacklist[-2]:
+                        stacklist.pop(-1)
+                        stacklist.pop(-1)
+                        answer += 2     
+                break
+
+    return answer
