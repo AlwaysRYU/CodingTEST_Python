@@ -13,7 +13,7 @@ https://programmers.co.kr/learn/courses/30/lessons/72410?language=python3
      만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
 7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를 new_id의 길이가 3이 될 때까지 반복해서 끝에 붙입니다.
 '''
-new_id = "...!@BaT#*..y.abcdefghijklm"
+new_id = "=.="
 
 def solution(new_id):
     answer = ''
@@ -37,34 +37,53 @@ def solution(new_id):
     
     #3단계 연속된 .제거 
     delete = 0
+    temp = 0
     for i in range(len(answer)):
-        temp = 0
         if answer[i] == '.' :
-            if temp >= 1 :
-                answer[i] = 'D' 
-            else : temp += 1
+            if temp >= 1 : 
+                answer[i] = 'D'
+                delete += 1
+            else : 
+                temp += 1
         else : temp = 0
-        
         if i == len(answer) -1 : break
 
     for i in range(delete) :
         answer.remove('D')
     print(answer)
 
-    #4단계 .맨뒤 맨앞제거 
-    if answer[0] == '.' : del answer[0]
-    if answer[len(answer)-1] == '.' : del answer[len(answer)-1]
+    #4단계 .맨뒤 맨앞제거
+    delete = 0 
+    while len(answer) >= 1 :
+        if answer[0] == '.' :
+            answer.remove('.')
 
+    while len(answer) >= 1: 
+        if answer[len(answer)-1] == '.' :
+            answer.pop()
+
+    print('4단계이후')
+    print(answer)
+    
     #5단계 빈문자열이라면 a대입
-    if len(answer) == 0 : answer.append('a') 
+    if len(answer) == 0 : 
+        answer.append('a') 
 
     #6단계
-    while len(answer) < 16 : answer.pop()
+    while len(answer) >= 16 : 
+        answer.pop()
+        
+    while len(answer) >= 1: 
+        if answer[len(answer)-1] == '.' :
+            answer.pop()
+    print('6단계 이후')
+    print(answer)
 
     #7단계 
     if len(answer) <=2 : 
         temp = answer.pop()
-        while len(answer) == 3 : answer.append(temp)
+        while len(answer) < 3 : 
+            answer.append(temp)
 
     dap = ''.join(answer)
     return dap

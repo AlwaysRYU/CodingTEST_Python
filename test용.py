@@ -1,4 +1,4 @@
-a = ['a','b','c','c']
+a = []
 
-a.remove('c')
-print(a)
+
+print(len(a))
