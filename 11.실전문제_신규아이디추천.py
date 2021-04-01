@@ -20,7 +20,7 @@ def solution(new_id):
     #1단계 소문자로
     tempID = new_id.lower()
     answer = list(tempID)
-    print(answer)
+    #print(answer)
 
     #2단계 
     delete = 0
@@ -33,7 +33,7 @@ def solution(new_id):
     
     for i in range(delete) :
         answer.remove('D')
-    print(answer)
+    #print(answer)
     
     #3단계 연속된 .제거 
     delete = 0
@@ -50,7 +50,7 @@ def solution(new_id):
 
     for i in range(delete) :
         answer.remove('D')
-    print(answer)
+    #print(answer)
 
     #4단계 .맨뒤 맨앞제거
     delete = 0 
@@ -62,8 +62,8 @@ def solution(new_id):
         if answer[len(answer)-1] == '.' :
             answer.pop()
 
-    print('4단계이후')
-    print(answer)
+    #print('4단계이후')
+    #print(answer)
     
     #5단계 빈문자열이라면 a대입
     if len(answer) == 0 : 
@@ -72,12 +72,10 @@ def solution(new_id):
     #6단계
     while len(answer) >= 16 : 
         answer.pop()
-        
-    while len(answer) >= 1: 
-        if answer[len(answer)-1] == '.' :
-            answer.pop()
-    print('6단계 이후')
-    print(answer)
+        if answer[len(answer)-1] == '.' : answer.pop()
+
+    #print('6단계 이후')
+    #print(answer)
 
     #7단계 
     if len(answer) <=2 : 
@@ -85,6 +83,7 @@ def solution(new_id):
         while len(answer) < 3 : 
             answer.append(temp)
 
+    print(answer)
     dap = ''.join(answer)
     return dap
 
