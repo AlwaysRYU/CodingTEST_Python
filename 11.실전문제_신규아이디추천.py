@@ -13,14 +13,15 @@ https://programmers.co.kr/learn/courses/30/lessons/72410?language=python3
      만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
 7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를 new_id의 길이가 3이 될 때까지 반복해서 끝에 붙입니다.
 '''
-new_id = "=.="
+new_id = "...!@BaT#*..y.abcdefghijklm"
 
 def solution(new_id):
     answer = ''
     #1단계 소문자로
     tempID = new_id.lower()
     answer = list(tempID)
-    #print(answer)
+    print('1단계')
+    print(answer)
 
     #2단계 
     delete = 0
@@ -33,7 +34,8 @@ def solution(new_id):
     
     for i in range(delete) :
         answer.remove('D')
-    #print(answer)
+    print('2단계')
+    print(answer)
     
     #3단계 연속된 .제거 
     delete = 0
@@ -50,41 +52,67 @@ def solution(new_id):
 
     for i in range(delete) :
         answer.remove('D')
-    #print(answer)
+    print('3단계')
+    print(answer)
 
     #4단계 .맨뒤 맨앞제거
     delete = 0 
     while len(answer) >= 1 :
         if answer[0] == '.' :
             answer.remove('.')
+        else : break
 
     while len(answer) >= 1: 
         if answer[len(answer)-1] == '.' :
             answer.pop()
+        else : break
 
-    #print('4단계이후')
-    #print(answer)
+    print('4단계')
+    print(answer)
     
     #5단계 빈문자열이라면 a대입
     if len(answer) == 0 : 
         answer.append('a') 
 
-    #6단계
+    #6단계 길이는 15 까지.
     while len(answer) >= 16 : 
         answer.pop()
         if answer[len(answer)-1] == '.' : answer.pop()
 
-    #print('6단계 이후')
-    #print(answer)
+    print('6단계')
+    print(answer)
 
     #7단계 
     if len(answer) <=2 : 
         temp = answer.pop()
         while len(answer) < 3 : 
             answer.append(temp)
-
+        
+    print('7단계')
     print(answer)
     dap = ''.join(answer)
     return dap
 
 print(solution(new_id))
+
+
+#다른사람의 풀이----------------------------------------
+import re
+
+def solution2(new_id):
+    st = new_id
+    st = st.lower()
+    st = re.sub('[^a-z0-9\-_.]', '', st)
+    st = re.sub('\.+', '.', st)
+    st = re.sub('^[.]|[.]$', '', st)
+    st = 'a' if len(st) == 0 else st[:15]
+    st = re.sub('^[.]|[.]$', '', st)
+    st = st if len(st) > 2 else st + "".join([st[-1] for i in range(3-len(st))])
+    return st
+#정규식을 제거한 버전이래
+
+
+
+
+
+
