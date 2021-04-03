@@ -11,3 +11,7 @@ a = ['a', 'b','c']
 a.pop()
 
 print(a)
+
+a = (2,1) 
+b = (3, 2)
+print(a+b)
