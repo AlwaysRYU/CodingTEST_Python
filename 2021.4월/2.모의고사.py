@@ -4,8 +4,8 @@ https://programmers.co.kr/learn/courses/30/lessons/42840?language=python3
 level : 1
 
 수포자는 수학문제를 다음과 깉이찍는다.
-1번 1 2 3 4 5 1 2 3 4 5...
-2번 2 1 2 3 2 4 2 5 2 (2-n)
+1번 1 2 3 4 5 1 2 3 4 5... (1 2 3 4 5 반복)
+2번 2 1 2 3 2 4 2 5 2 (2와 n) 1 3 4 5
 3번 3 3 1 1 2 2 4 4 5 5  ( 3 1 2 4 5 ) 이렇게 2번 반복
 
 가장 많은 문제를 맞힌 사람을 리턴함
@@ -16,8 +16,8 @@ level : 1
 '''
 
 input1 = [1,2,3,4,5]
-input2 = [1,3,2,4,2]
-input3 = [1,3]
+input2 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+input3 = [3, 3, 1, 1, 1, 1, 2, 3, 4, 5] 
 
 def solution(answers):
     answer = []
@@ -29,7 +29,8 @@ def solution(answers):
     #1 번확인
     for i in range(len(answers)) :
         j += 1
-        if j == 6 : j = 1
+        if j == 6 : 
+            j = 1
         if j == answers[i] :
             # 일치할 경우
             temp1 += 1
@@ -73,6 +74,8 @@ def solution(answers):
     tempans.append(temp3)
     
     buzz = tempans[0]
+    print(tempans)
+    
     for i in range(len(tempans)):
         if buzz < tempans[i]:
             buzz = tempans[i]
