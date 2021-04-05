@@ -75,7 +75,7 @@ def solution(answers):
     
     buzz = tempans[0]
     print(tempans)
-    
+
     for i in range(len(tempans)):
         if buzz < tempans[i]:
             buzz = tempans[i]
@@ -89,6 +89,44 @@ def solution(answers):
     print(answer)
     return answer
 
+
+# 다른사람의 풀이
+def solution2(answers):
+    pattern1 = [1,2,3,4,5]
+    pattern2 = [2,1,2,3,2,4,2,5]
+    pattern3 = [3,3,1,1,2,2,4,4,5,5]
+    score = [0, 0, 0]
+    result = []
+
+    
+    for idx, answer in enumerate(answers):
+        if answer == pattern1[idx%len(pattern1)]:
+            score[0] += 1
+        if answer == pattern2[idx%len(pattern2)]:
+            score[1] += 1
+        if answer == pattern3[idx%len(pattern3)]:
+            score[2] += 1
+
+    for idx, s in enumerate(score):
+        if s == max(score):
+            result.append(idx+1)
+
+    return result
+
 print(solution(input1))
 print(solution(input2))
 print(solution(input3))
+
+
+#오늘의 파이썬 - enumerate
+'''
+반복문 사용시 몇번째 반복문인지 확인이 필요할 때,
+인덱스번호와 컬렉션의 원소를 tuple형태로 반환
+인덱스는 0부터 1234~ 원소는 리스트를 출력 
+'''
+t = [1,5,7,33,39,52]
+for n, p in enumerate(t):
+    print(n,p)
+
+
+
