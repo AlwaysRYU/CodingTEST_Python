@@ -35,6 +35,15 @@ print(solution(test,command))
 def solution2(array, commands):
     return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
 
+#다른사람의 풀이3
+def solution3(array, commands):
+    answer = []
+    for command in commands:
+        i,j,k = command
+        #각각 3개의 수가 저장 가능
+        answer.append(list(sorted(array[i-1:j]))[k-1])
+    return answer
+
 #오늘의 파이썬
 '''
 
