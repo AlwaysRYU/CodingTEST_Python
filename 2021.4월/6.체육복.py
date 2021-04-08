@@ -1,5 +1,5 @@
 # 체육복
-# 2021.04.08 
+# 2021.04.08 풀이
 '''
 https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3
 
@@ -87,17 +87,25 @@ def solution(n,lost, reverse):
 #다른 사람의 풀이
 def solution2(n, lost, reserve):
     _reserve = [r for r in reserve if r not in lost]
+    print(_reserve)
+    # _reverse에 추가 / r은 reverse엔 있지만, lost에는 없는 요소
     _lost = [l for l in lost if l not in reserve]
+    # _lost에 l을 추가하기. l은 lost에있지만, reverse 에는 없는 요소
+    print(_lost)
+
     for r in _reserve:
+        #이미 잃어버린 사람 = 여분 사람을 제거했으므로 + - 만해줘도 된다.
         f = r - 1
         b = r + 1
         if f in _lost:
             _lost.remove(f)
         elif b in _lost:
             _lost.remove(b)
+
+    #결과는 최종 명단에서 절대 못입는 사람을 뺌
     return n - len(_lost)
 
-print(solution(test1n,test1lost,test1reverse))
-print(solution(test2n,test2lost,test2reverse))
-print(solution(test3n,test3lost,test3reverse))
-print(solution(test4n,test4lost,test4reverse))
+print(solution2(test1n,test1lost,test1reverse))
+print(solution2(test2n,test2lost,test2reverse))
+print(solution2(test3n,test3lost,test3reverse))
+print(solution2(test4n,test4lost,test4reverse))
