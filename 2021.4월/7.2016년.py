@@ -39,13 +39,13 @@ def solution(a,b):
     totalday += b
     answer = day[totalday % 7]
     return answer
-    
+
 #다른사람의 풀이
 def getDayName(a,b):
     months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     days = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
     return days[(sum(months[:a-1])+b-1)%7]
-
+#월 리스트의 0부터 추가하기
 
 print(solution(mon,day))
 
