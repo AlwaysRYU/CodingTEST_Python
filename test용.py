@@ -21,3 +21,13 @@ command = [[2,5,3],[4,4,1],[1,7,3]]
 print(command[0][1])
 
 print(14%7)
+
+print()
+strr = "우악"
+strr += "새"
+print(strr)
+
+
+a = [2,4]
+b = [1,3]
+print()

@@ -137,3 +137,22 @@ sorted([5,2,3,1,4])  라고하면
 [1,2,3,4,5]가 출력된다.
 역시 reverse = True 로 역정렬이 가능하다.
 '''
+
+
+# 2021.04.14.
+# 10 zip() 내장함수
+# https://www.daleseo.com/python-zip/
+'''
+두 그룹의 데이터를 엮어주는 파이썬의 내장함수 zip()
+순회가능한 객체를 인자로 받고,
+각 객체가 담고있는 원소를 차례로 반복하여 접근하는
+반복자를 반환한다.
+'''
+print()
+print("zip내장함수")
+numbers = [1,2,3]
+letters = ["A", "B", "C"]
+for pair in zip(numbers, letters):
+    print(pair)
+for number, upper, lower in zip("12345", "ABCDE", "가나다라마"):
+    print(number, upper, lower)
