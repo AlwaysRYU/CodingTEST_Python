@@ -31,3 +31,13 @@ print(strr)
 a = [2,4]
 b = [1,3]
 print()
+
+
+a = 6
+b = []
+
+if not b :
+    print("어떻게 출력")
+
+if not b and a == 6:
+    print("출력")
