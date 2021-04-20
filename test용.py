@@ -41,3 +41,12 @@ if not b :
 
 if not b and a == 6:
     print("출력")
+
+
+print("리스트비교")
+
+a = [1,2]
+b = [2,1,3,4]
+
+if a in b :
+    print("리스트 끼리 이런게 가능")
