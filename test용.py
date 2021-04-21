@@ -72,3 +72,19 @@ c = [1,2,3,4,5]
 print(c[-2])
 print()
 
+print("문자열테스트")
+d = "abcde"
+print(d[0])
+print(len(d))
+print()
+
+
+e = '1D2S#10S'
+for i in range(len(e)):
+    print(e[i])
+
+
+print("str을 int로")
+a = '3'
+b = int(a)
+print(b+2)
