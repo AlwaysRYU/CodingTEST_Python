@@ -156,3 +156,11 @@ for pair in zip(numbers, letters):
     print(pair)
 for number, upper, lower in zip("12345", "ABCDE", "가나다라마"):
     print(number, upper, lower)
+
+
+# 2021.04.21.
+# 11. 이진수
+'''
+근데 앞에 0x 이런게 있으니까 [2:] 사용하고
+bin(6|9)[2:] 이렇게 논리 연산도 가능하다.
+'''

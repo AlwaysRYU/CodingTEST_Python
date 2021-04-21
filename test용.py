@@ -50,3 +50,25 @@ b = [2,1,3,4]
 
 if a in b :
     print("리스트 끼리 이런게 가능")
+#결론 불가능하다.
+print()
+
+a = 6
+b = 9
+c = 12
+b = bin(a)
+print("2진수 변환")
+print(b)
+print(b[2:])
+print(bin(a|c)[2:])
+print()
+
+print("반복문을 통한 리스트 생성")
+print([ 0 for i in range(5)])
+print()
+
+print("리스트 다루기 ")
+c = [1,2,3,4,5]
+print(c[-2])
+print()
+
