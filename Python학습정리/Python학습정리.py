@@ -164,3 +164,16 @@ for number, upper, lower in zip("12345", "ABCDE", "가나다라마"):
 근데 앞에 0x 이런게 있으니까 [2:] 사용하고
 bin(6|9)[2:] 이렇게 논리 연산도 가능하다.
 '''
+
+
+# isdigit /isalpha
+# 문자열이 숫자인지 문자인지 체크하기 
+'''
+isdigit : 이게 숫자인지? True / False
+idalpha : 이게 문자인지? True / False
+'''
+
+num = '111'
+print()
+print(num.isdigit())
+print()
