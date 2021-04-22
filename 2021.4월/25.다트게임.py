@@ -134,9 +134,9 @@ def solution2(dartResult):
     print('answer은 : ' + str(answer))
     return answer 
 
-print(solution2(test1))
-print(solution2(test2))
-print(solution2(test3))
+# print(solution2(test1))
+# print(solution2(test2))
+# print(solution2(test3))
 
 #다른사람의 풀이
 import re
@@ -144,15 +144,28 @@ import re
 #이제 정규식을 많이 쓰네 .
 
 def solution(dartResult):
+    # dictionary 사용하기 
     bonus = {'S' : 1, 'D' : 2, 'T' : 3}
     option = {'' : 1, '*' : 2, '#' : -1}
     # 정규식
     p = re.compile('(\d+)([SDT])([*#]?)')
     dart = p.findall(dartResult)
+    # 보니까 이게 핵심이고
+    
+    #
     for i in range(len(dart)):
+        print(dart)    
+        # 곱하기가 나오고 두번째거면, 곱하기 2를함
         if dart[i][2] == '*' and i > 0:
             dart[i-1] *= 2
+        
         dart[i] = int(dart[i][0]) ** bonus[dart[i][1]] * option[dart[i][2]]
-
+        
+    print(dart)
     answer = sum(dart)
     return answer
+
+    
+print(solution(test1))
+print(solution(test2))
+print(solution(test3))
