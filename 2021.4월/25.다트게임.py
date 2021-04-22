@@ -21,23 +21,22 @@
 
 '''
 
-
-
 test1, test2, test3 = "1S2D*3T" , "1D2S#10S" , "1D2S0T"
+
+import math
+# 너무 힘들다..이렇게 하는게 아닌 걸 알지만, 아는 것이 이거라서 이렇게밖에 못품
 def solution2(dartResult):
     answer = 0
     #10을 B로 치환
     dartResult = dartResult.replace('10', 'B')
     # number, SDT
     number = ['0','1','2','3','4','5','6','7','8','9','B']
-    number2 = [0,1,2,3,4,5,6,7,8,9,'B']
     SDT = ['S', 'D', 'T']
 
     dartlist = list(dartResult)
 
     take = 1
     beforeScore = 0
-    example = 0
 
     print('dartlist : ' + str(dartlist))
     for i in range(len(dartlist)):
@@ -48,47 +47,81 @@ def solution2(dartResult):
 
         #숫자를 가져옴
         if dartlist[i] in number :
+            if take == 2 :
+                if dartlist[i] == 'B':
+                    answer += tempscore
+                    beforeScore = tempscore
+                    tempscore =  10
+                    take = 1
+                    continue
+                # 이전 SD가 나왔고, 숫자가 나왔을 때
+                answer += tempscore
+                beforeScore = tempscore
+                tempscore =  int(dartlist[i])
+                take = 1
+                print('***************answer은 : ' + str(answer))
+                continue
+
             if dartlist[i] == 'B' :
                 tempscore = 10
                 take = 1
                 print('확인한 숫자 : ' + str(tempscore))
                 continue
+            
             else :
                 tempscore =  int(dartlist[i])
                 take = 1
                 print('확인한 숫자 : ' + str(tempscore))
                 continue
+            
         
         #바로전 S D 가 나왔을 때,
         if take == 2 :
             if dartlist[i] == '*':
                 #곱하기가 나올경우
-                answer += (2 * tempscore) + ( 2 * beforeScore )
+                answer += beforeScore
+                answer += 2 * tempscore
                 beforeScore = (2 * tempscore)
                 take = 1
+                print('***********answer은 : ' + str(answer))
                 continue
             if dartlist[i] == '#':
                 # #이 나올경우
                 answer += (-1) * tempscore
                 beforeScore = (-1) * tempscore
                 take = 1
+                print('**************answer은 : ' + str(answer))
                 continue
-            elif i == len(dartlist) -1 :
-                answer += tempscore
+            # elif i == len(dartlist) -1 : #마지막일 우
+            #     answer += tempscore
             else :
                 # 이전 SD가 나왔고, 숫자가 나왔을 때
+                answer += tempscore
                 beforeScore = tempscore
                 take = 1
+                print('***************8answer은 : ' + str(answer))
                 continue
 
         if dartlist[i] in SDT:
+            if i == len(dartlist) -1 : #마지막일 우
+                if dartlist[i] == 'D':
+                    answer += math.pow(tempscore,2)
+                    break
+                elif dartlist[i] == 'T':
+                    answer += math.pow(tempscore,3)
+                    break
+                else :
+                    answer += tempscore
+                    break
+
             if  dartlist[i] == 'D' :
-                tempscore = tempscore ** 2
+                tempscore = math.pow(tempscore,2)
                 take = 2
                 print('확인한 글자 : ' + str(dartlist[i]))
+                print(tempscore)
                 continue
             elif dartlist[i] == 'T' :
-                tempscore = tempscore ** 3
+                tempscore = math.pow(tempscore,3)
                 take = 2
                 print('확인한 글자 : ' + str(dartlist[i]))
                 continue
@@ -98,60 +131,28 @@ def solution2(dartResult):
                 continue
 
         
+    print('answer은 : ' + str(answer))
     return answer 
-
-
-
-def solution(dartResult):
-    answer = 0
-    templist = []
-
-    tempstr = ""
-
-    number = ['0','1','2','3','4','5','6','7','8','9']
-    SDT = ['S', 'D', 'T']
-
-    
-    for i in range(len(dartResult)):
-        print(str(i+1) + '번째 글자 : ' + str(dartResult[i]) )
-
-        #마지막 글자일 경우 그냥 넣음
-        if i == len(dartResult) -1 :
-            print('마지막글자입니다.')
-            tempstr += dartResult[i]
-            templist.append(tempstr)
-            break
-
-        # 글자가 * # 의 경우 넣음
-        elif dartResult[i] == '*' or dartResult[i] == '#' :
-            tempstr += dartResult[i]
-            templist.append(tempstr)
-            tempstr =""
-            continue
-
-        # 숫자가 나왔는데 전에 글자가 SDT의 경우 넣음.
-        elif dartResult[i] in SDT :
-            # SDT 다음에 숫자일경우
-            if dartResult[i+1] in number :
-                tempstr += dartResult[i]
-                templist.append(tempstr)
-                tempstr =""
-                continue
-            #숫자가 아닐경우
-            else : 
-                tempstr += dartResult[i]
-                continue 
-
-        #아니면 넣음
-        else : tempstr += dartResult[i]
-
-    # templist로 나눴다.        
-    print(templist)
-
-
-
-    return answer
 
 print(solution2(test1))
 print(solution2(test2))
 print(solution2(test3))
+
+#다른사람의 풀이
+import re
+
+#이제 정규식을 많이 쓰네 .
+
+def solution(dartResult):
+    bonus = {'S' : 1, 'D' : 2, 'T' : 3}
+    option = {'' : 1, '*' : 2, '#' : -1}
+    # 정규식
+    p = re.compile('(\d+)([SDT])([*#]?)')
+    dart = p.findall(dartResult)
+    for i in range(len(dart)):
+        if dart[i][2] == '*' and i > 0:
+            dart[i-1] *= 2
+        dart[i] = int(dart[i][0]) ** bonus[dart[i][1]] * option[dart[i][2]]
+
+    answer = sum(dart)
+    return answer
