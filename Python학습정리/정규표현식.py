@@ -169,41 +169,104 @@ p = re.compile('ab*')
     finditer() : 정규식과 매치되는 모든 문자열(substring)을 반복 가능한 객체로 돌려준다.
 '''
 
-# 패턴생성
-p = re.compile('[a-z]+')
-# 3-1. match
-match = p.match("python")
-# python은 정규식에 부합한다.
-print(match)
-match = p.match("3 python") #3은 정규식에 부합하지 않는다.
-print(match)
+# 3-0. 패턴생성
+p = re.compile('[a-z]+') # 뜻 : abcd...z까지  1번이상 반복하는가?
 
-'''# 보통 이런식으로 작성한다.
-p = re.compile(정규표현식)
-m = p.match( 'string goes here' )
-if m:
-    print('Match found: ', m.group())
-else:
-    print('No match')
+# 3-1. match
 '''
+의미 :
+    문자열이 처음부터 정규식과 매치가 되는가?
+'''
+print("match 예시 : ")
+match = p.match("python")  # 정규식에 부합하는 지 팔별한다. python은 정규식에 부합한다.
+print(match)
+match = p.match("3 python") # 3 python 은 정규식에 부합하지 않는다.
+print(match)
+print()
+
+'''
+보통 이런식으로 작성한다.
+    p = re.compile(정규표현식)
+    m = p.match( 'string goes here' )
+    if m:
+        print('Match found: ', m.group())
+    else:
+        print('No match')
+'''
+
+# 3-2. search()
+'''
+의미 :
+    match와 비슷하지만,
+    문자열의 전체를 검색한다.
+'''
+print("search")
+p = re.compile("[a-z]+")
+search = p.search("3 python")
+print(search)
+print()
+
+# 3-3. findall()
+'''
+의미 :
+    문자열의 각각 단어를 각각 정규식(p , 여기서는 [a-z]+)와 매치해서
+    리스트로 되돌려준다.
+    매치되는 것만 되돌려 준다.
+'''
+print("findall 예시 : ")
+p = re.compile("[a-z]+")
+findall = p.findall("only a fool could walk away from me this time cloud 9 ") 
+print(findall)
+print()
+
+# 3-4. finditer()
+'''
+의미:
+    findall과 동일하지만, 결과로 반복가능한 객체 (iterator object)를 돌려줌.
+    반복가능한 객체가 포함하는 각각의 요소는 match객체이다.
+    역시 매치 되는 것만 알려준다.
+'''
+print("finditer 예시 : ")
+p = re.compile("[a-z]+")
+finditer = p.finditer("I need to find out where I am before I reach the stars")
+print(finditer)
+for r in finditer :
+    print(r)
+print()
 
 # 4. match객체의 메소드
 '''
-match 메소드 search 메소드를 수행한 결과로 돌려주는 match객체에
-    앞에서 정규식을 사용한 문자열 검색을 수행하면서
+개념:
+    match 메소드 search 메소드를 수행한 결과로 돌려주는 match객체를 다루는다.
+    앞에서 정규식을 사용한 문자열 검색을 수행하면서 어떤 문자열인지, 인덱스는 무엇인지 알려준다.
     group()	매치된 문자열을 돌려준다.
     start()	매치된 문자열의 시작 위치를 돌려준다.
     end()	매치된 문자열의 끝 위치를 돌려준다.
     span()	매치된 문자열의 (시작, 끝)에 해당하는 튜플을 돌려준다.
 '''
 print("match객체의 메소드")
+print("정규표현식 컴파일된 패턴객체 p  = [a-z]+ / m은 match 객체")
 m = p.match("python")
-print(m.group())
-print(m.start())
-print(m.end())
-print(m.span())
 
-#축약할 수 있다.
+# 4-1. group() : 매치된 문자열을 알려준다.
+print("group() : ")
+print(m.group())
+
+# 4-2. start() : 매치된 문자열의 시작 위치를 알려준다.
+print("start() : ")
+print(m.start())
+
+# 4-3. end() : 매치된 문자열의 끝 위치를 알려준다.
+print("end() : ")
+print(m.end())
+
+# 4-4. span() : 매치된 문자열의 시작과 끝에 해당하는 튜플을 알려준다.
+print("span() : ")
+print(m.span())
+print()
+print()
+
+# 팁 : 매치하는 과정을 다음과 같이축약할 수 있다.
 m = re.match('[a-z]+', "python")
 
 # 5. 메타문자
@@ -225,3 +288,10 @@ print(m)
 '''
 print(re.search('^Life', 'Life is too short'))
 print(re.search('^Life', 'My Life'))
+
+
+# 6. 정규식 컴파일 옵션
+'''
+컴파일할 때 옵션을 사용할 수 있다.
+
+'''
