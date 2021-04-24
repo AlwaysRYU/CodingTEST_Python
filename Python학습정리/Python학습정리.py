@@ -1,16 +1,22 @@
-# 0. 주석 달기
-# 주석다는 방법 : ''' """
-# 또는 ctl + /
+# 0. 주석
+'''
+방법 :
+    """ """
+    ctl + /
+'''
 
 # def sum(a,b) :
 #     #더하기 함수
 #     print(a+b)
+'''
+'''
 
 # 1. split
+'''
 # split( seq = '', max split = -1) 문자열을 나누는 함수
 # seq : 문자열을 구분하는거
 # maxsplit : 분리할 문자개수를 지정할 때 사용됨
-
+'''
 # examplemal = '우리는 모두 괜찮습니다.'
 # print(examplemal)
 # examplemal.split(' ')
@@ -19,7 +25,7 @@
 
 # 2. for 문
 # for 변수 in 리스트 :
-# ...
+
 
 exlist = ['one', 'two', 'three']
 for i in exlist:
@@ -183,4 +189,12 @@ print()
 # 12.연산자
 '''
 산술에서 신경쓸 것은  //은 몫, /은 나누기
+'''
+
+
+
+# 13. 문자열.replace(a,b) : 특정한 값 교체
+'''
+replace(a,b,c) : a를 b로 교체한다. c는횟수.
+문자열에서만 사용가능 
 '''
