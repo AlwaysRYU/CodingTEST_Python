@@ -45,6 +45,11 @@ x.count(4)
 a = [7,8,9]
 a.index(7)
 
+# 
+
+
+
+
 # 뒤에서부터 역순 출력 : 리스트 슬라이스
 a = [1,2,3,4,5,6,7,8,9]
 for i in a[::-1]:
@@ -64,3 +69,11 @@ print(a)
 # ''.join(리스트) : 반대로, 리스트를 STR로 바꿀때
 new_name = ''.join(a)
 print(new_name)
+
+# 파이썬에서 리스트 안의 값을 바꿀 때
+print()
+print("swap")
+list_a = [3,5]
+list_a[0], list_a[1] = list_a[1], list_a[0]
+print(list_a)
+# 이렇게 바꿀수 있다.

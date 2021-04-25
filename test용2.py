@@ -16,3 +16,8 @@ a = [1,2,3,4,5,6,7,8,9]
 
 for i in range(4,9,4):
     print(i)
+
+
+print()
+strings = ["sun", "bed"]
+print(strings[0][2])
