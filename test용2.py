@@ -21,3 +21,8 @@ for i in range(4,9,4):
 print()
 strings = ["sun", "bed"]
 print(strings[0][2])
+
+
+b = [[1,2],[3,4],[5,6]]
+del b[0]
+print(b)
