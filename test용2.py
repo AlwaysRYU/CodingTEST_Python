@@ -26,3 +26,12 @@ print(strings[0][2])
 b = [[1,2],[3,4],[5,6]]
 del b[0]
 print(b)
+c = [1,2,3,4]
+
+for i in range(len(c)-1,0 , -1):
+    print(c[i])
+
+d = [1,2,3,4,5]
+
+d[2] = d[3]
+print(d)
