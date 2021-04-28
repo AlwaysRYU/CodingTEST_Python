@@ -35,3 +35,10 @@ d = [1,2,3,4,5]
 
 d[2] = d[3]
 print(d)
+
+e = [1] * 10
+print(e)
+
+f = d.pop(0)
+print(d)
+print(f)
