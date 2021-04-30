@@ -42,3 +42,17 @@ print(e)
 f = d.pop(0)
 print(d)
 print(f)
+
+g = "when you gonna learn"
+for i in range(len(g)):
+    print(g[i])
+
+h = "이럴거면그러지말지"
+print(h[:2])
+print(h[2:])
+
+j = "(((()))))"
+jj = j.replace('(','-')
+jjj = jj.replace(')','(')
+jjjj = jjj.replace('-',')')
+print(jjjj)
