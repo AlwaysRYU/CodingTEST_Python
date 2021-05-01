@@ -46,7 +46,20 @@ x.count(4)
 a = [7,8,9]
 a.index(7)
 
-# 
+# 6. sort,sorted : 정렬, 반환하진않는다.
+a.sort(reverse=True) #내림차순
+sorted(a) # 이런식으로 사용가능
+'''
+key를 사용할 수 있다. 이건 많이 쓰더라.
+key:
+    정렬을 목적으로 하는 함수를 값으로 넣는다.
+    lambda를 넣어서 사용하기도 함.
+'''
+b = ['judgment', 'compare','you','gryffin','car','thegarden']
+print(sorted(['1','12','123','1234','12345'], key = len))
+# 또는
+print(sorted(b, key = lambda x : x[1]))
+# 두번째 글자로 배열
 
 
 # 반복문으로 이중리스트 만들기

@@ -56,3 +56,18 @@ jj = j.replace('(','-')
 jjj = jj.replace(')','(')
 jjjj = jjj.replace('-',')')
 print(jjjj)
+
+
+k = "123"
+l = int(k)
+print(k)
+
+for i in range(9,1,-1):
+    print(i)
+
+m = ['94','9','5','52','534', '53' ]
+m.sort(reverse=True)
+# m.sort()
+print(m)
+
+print((lambda x : x*3)(2))
