@@ -70,4 +70,5 @@ m.sort(reverse=True)
 # m.sort()
 print(m)
 
-print((lambda x : x*3)(2))
+print((lambda x : x*3)('2'))
+

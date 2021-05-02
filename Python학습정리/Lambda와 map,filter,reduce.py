@@ -19,5 +19,4 @@ print(list(map(lambda x : x **2 , range(6) )))
     map(함수, 리스트)
 '''
 
-print(list(map(lambda x : x**2 , range(5))))
-print(list(map(lambda x : x* 2)))
+print(list(map(lambda x : x**2 , range(5) )))

@@ -11,13 +11,15 @@ import itertools
 
 # 다른사람
 def solution(num): 
-    num = list(map(str, num)) 
+    num = list(map(str, num))
+    # str 을 곱하기하면 9 -> 999 가 된다. 
     num.sort(key = lambda x : x*3, reverse = True) 
     return str(int(''.join(num)))
 
 
+
 #시간초과,,, 다 시간초과 나오네 아무래도 일일히 하는것 힘든듯
-def solution(numbers):
+def solution2(numbers):
     maxx = 0
     
     Plist = list(itertools.permutations(numbers,len(numbers)))
@@ -30,6 +32,13 @@ def solution(numbers):
             maxx = int(temp)
     answer = str(maxx)
     return answer
+
+
+print(solution2(a1))
+# print(solution2(a2))
+
+# 고뇌의 흔적
+'''
 
 def solution2(numbers):
     answer = ""
@@ -72,5 +81,5 @@ def solution3(numbers):
         else 
 
     return answer
-print(solution2(a1))
-# print(solution2(a2))
+
+'''
