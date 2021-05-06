@@ -72,3 +72,5 @@ print(m)
 
 print((lambda x : x*3)('2'))
 
+print(type(3) == int)
+
