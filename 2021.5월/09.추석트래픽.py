@@ -1,5 +1,6 @@
 # 추석트래픽
 # https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
+# level3
 
 t1 = ["2016-09-15 01:00:04.001 2.0s", "2016-09-15 01:00:07.000 2s"]
 t2 =  ["2016-09-15 01:00:04.002 2.0s", "2016-09-15 01:00:07.000 2s"]
@@ -28,7 +29,7 @@ def solution(lines):
 
     
     #시간 정리
-    for i in range(len(lines)):
+    for i in range(len(lines))
         a =lines[i].split(" ")
         kizun = datetime.strptime(a[1],"%H:%M:%S.%f")
         plus = datetime.strptime(a[2][:-1], "%S.%f")
