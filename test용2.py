@@ -77,3 +77,7 @@ print(type(3) == int)
 print(m)
 print(m[-1])
 
+
+a = ["123","12","1234"]
+b = sorted(a, key=len)
+print(b)

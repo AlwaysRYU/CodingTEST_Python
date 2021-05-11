@@ -27,6 +27,7 @@ print(solution(a4))
 print(solution(a5))
 print(solution(a6))
 
+print(solution([5,9,8]))
 '''
 
 def solution(arr):
