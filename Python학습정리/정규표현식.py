@@ -266,6 +266,11 @@ print(m.span())
 print()
 print()
 
+# 4-5. sub() : 해당하는문자열을 제거
+re.sub('apple|orange', 'fruit', 'apple box orange tree')
+# 문자열에서 apple, orange를 찾아서, fruit로 바꾼다.
+
+
 # 팁 : 매치하는 과정을 다음과 같이축약할 수 있다.
 m = re.match('[a-z]+', "python")
 
