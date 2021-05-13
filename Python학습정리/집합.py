@@ -36,6 +36,9 @@ p1.update([6,7,8])
 # remove
 p1.remove(5)
 
+# 5-2. 삭제로 discard를 사용할 수 있다.
+# discard()는 삭제할 대상이 없어도 오류가 나지않는다.
+p1.discard(8888)
 
 # 6.frozenset
 # 데이터를 수정할수 없는 집합

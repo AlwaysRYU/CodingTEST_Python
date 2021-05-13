@@ -24,3 +24,13 @@ print(len(nPr))
 
 nCr = list(itertools.combinations(arr,2))
 print(nCr)
+
+
+# 쓰는 방법
+
+c = 5
+
+from itertools import combinations
+
+for i in range(1,c):
+    print(list(combinations(range(c),i)))

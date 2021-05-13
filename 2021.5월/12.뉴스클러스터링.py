@@ -1,5 +1,4 @@
 # 뉴스클러스터링
-
 #
 
 
@@ -10,6 +9,7 @@ s4, t4 = 'E=M*C^2',	'e=m*c^2'
 
 import re
 
+#나의 풀이
 def solution(str1, str2):
     answer = 0
     # str1 = re.sub("[^a-zA-Z]","",str1)

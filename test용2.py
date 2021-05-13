@@ -81,3 +81,10 @@ print(m[-1])
 a = ["123","12","1234"]
 b = sorted(a, key=len)
 print(b)
+
+c = 5
+
+from itertools import combinations
+
+for i in range(1,c):
+    print(list(combinations(range(c),i)))
