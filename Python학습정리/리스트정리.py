@@ -61,6 +61,10 @@ print(sorted(['1','12','123','1234','12345'], key = len))
 print(sorted(b, key = lambda x : x[1]))
 # 두번째 글자로 배열
 
+# 여러 개로도 가능하다.
+sorted(["abcd","sun","aun","gdull","eugd","quee","auee","quaa"], key = lambda x : (x[0],x[1]))
+
+
 
 # 반복문으로 이중리스트 만들기
 a = [[0 for j in range(2)] for i in range(3)]
