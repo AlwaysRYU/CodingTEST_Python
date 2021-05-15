@@ -4,7 +4,7 @@
 행렬테두리 회전하기 : https://programmers.co.kr/learn/courses/30/lessons/77485?language=python3
 접근은 좋았다. 구현을 잘 못했다.
 
-집합:
+집합: https://programmers.co.kr/learn/courses/30/lessons/12915
 
 문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057?language=python3
 

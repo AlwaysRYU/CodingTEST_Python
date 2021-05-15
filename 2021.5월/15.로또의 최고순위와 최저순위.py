@@ -39,6 +39,7 @@ print(solution(l3,win3))
 def solution2(lottos, win_nums):
 
     #랭크 리스트
+    
     rank=[6,6,5,4,3,2,1]
 
     cnt_0 = lottos.count(0)
