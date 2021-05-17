@@ -8,7 +8,6 @@
 
 문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057?language=python3
 
-
 N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/12953
 이건 진짜 왜 안되는지 모르겠음
 
@@ -26,3 +25,5 @@ N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/129
 메뉴리뉴얼 : https://programmers.co.kr/learn/courses/30/lessons/72411
 
 
+해결함 & 그 이유
+수식 최대화 : lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 됨. 이걸몰라서 막힘 
