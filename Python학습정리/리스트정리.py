@@ -66,19 +66,20 @@ sorted(["abcd","sun","aun","gdull","eugd","quee","auee","quaa"], key = lambda x 
 
 
 
-# 반복문으로 이중리스트 만들기
+# 팁1 : 반복문으로 이중리스트 만들기
 a = [[0 for j in range(2)] for i in range(3)]
 # 00  2열 3행
 # 00
 # 00
 
 
-# 뒤에서부터 역순 출력 : 리스트 슬라이스
+# 팁2 : 뒤에서부터 역순 출력 
+# 리스트 슬라이스라고 한다. -1를 사용하자.
 a = [1,2,3,4,5,6,7,8,9]
 for i in a[::-1]:
     print(i)
 
-# 팁 리스트와 문자열 변환하기
+# 팁3 : 리스트와 문자열 변환하기
 # split() : STR형을 리스트로 바꿀때
 munjang = "Asgore attacked me with spear"
 a = munjang.split()
@@ -89,14 +90,31 @@ a = list(name)
 print(a)
 
 
-# ''.join(리스트) : 반대로, 리스트를 STR로 바꿀때
+# 팁3-2 : ''.join(리스트) : 반대로, 리스트를 STR로 바꿀때
 new_name = ''.join(a)
 print(new_name)
 
-# 파이썬에서 리스트 안의 값을 바꿀 때
+# 팁4 :파이썬에서 리스트 안의 값을 바꿀 때
 print()
 print("swap")
 list_a = [3,5]
 list_a[0], list_a[1] = list_a[1], list_a[0]
 print(list_a)
 # 이렇게 바꿀수 있다.
+
+# 팁5 : copy() / 리스트에 복사에 관해
+# 리스트 복사시,
+a = [1,2,3]
+b = [4,5,6]
+a = b
+a.append(8)
+#이렇게하면, a 에 값을 넣는 건데도, b에도 들어간다.
+print()
+print("리스트 복사 : " )
+print(a)
+print(b)
+# 복사가 아닌 참조가 되어서 변경을 하면 값이 변경된다.
+# 그렇기 때문에, 1. copy()를 사용해야한다. 2. [:]를 사용해야한다.
+copy = b[:]
+copy2 = b.copy()
+

@@ -1,7 +1,13 @@
 # 파이썬 내장함수 정리
 # https://wikidocs.net/32
 
-# abs
+# abs :
+'''
+의미 : 절대값 출력하기.
+    입력
+    출력:
+특징 :
+'''
 
 # all :
 '''
@@ -41,7 +47,22 @@ print(any([""]))
 for i, name in enumerate(['body', 'foo', 'bar']):
     print(i,name)
 
-# eval
+# eval : 매개변수로 식을 받는다. 문자열(str)로!
+'''
+의미:
+    입력 : str형 수식을 받는다.
+    출력 : 계산하여 출력해준다.
+특징:
+    실제로는 조금 위험하다.
+    이는 스크립트언어의 취약점이다.
+    되도록 사용하지않는 것을 권장한다.
+'''
+print()
+print("eval : ")
+a = eval("1+3+4")
+print(a)
+print()
+
 # filter
 # hex
 # id
@@ -51,8 +72,12 @@ for i, name in enumerate(['body', 'foo', 'bar']):
 # len
 # list
 # map
-# max
-# min
+# max 와 min :
+'''
+의미: 각각 최대와 최소를 반환
+    입력 : iterable자료형 (반복가능한 데이터 타입 / member를 하나씩 접근할 수 있는 데이터 타입)
+
+'''
 # oct
 # open
 # ord
