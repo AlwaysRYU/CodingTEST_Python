@@ -48,3 +48,13 @@ print(list(a.keys()))
 # 3-4. clear()
 # 딕셔너리 안의 모든 요소를 삭제한다.
 
+# 3-5. get()
+# key 로 value 얻기
+# dictionary.get(key)
+
+print(mydictionary.get('mouse'))
+# 또는
+print(mydictionary.get('spiderman','없음'))
+# key에 해당하는것이 없을 경우, 오른쪽을 돌려준다.
+
+

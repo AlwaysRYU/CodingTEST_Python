@@ -1,3 +1,8 @@
+수식 최대화
+https://programmers.co.kr/learn/courses/30/lessons/67257
+로직은 맞는 것 같은데 구현에서 오류가 난다.
+4 9 2 에서, 4 9 가 1과 떨어져있을 때, 최단거리에 들어가야하나? 이걸 확실히 해야한다.
+
 후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
 어렵다.
 
@@ -13,7 +18,6 @@ N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/129
 
 이문제는 진짜 어렵다.
 추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
-
 
 예상 대진표 :
 약간 애매 하다.
