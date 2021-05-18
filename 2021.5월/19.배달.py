@@ -8,38 +8,33 @@ def solution(N, road, K):
     answer = 0
     answerdict = {}
     answerdict[1] = 0
-    for i in range(1,N) :
-        answerdict[i+1] = 'none'
-    print(answerdict)
-    # 굳이 정렬?
-    road = sorted(road, key = lambda x : x[0])
+    # for i in range(1,N) :
+    #     answerdict[i+1] = 'none'
+    # print(answerdict)
 
+
+    # 굳이 정렬?
+    # road = sorted(road, key = lambda x : x[0])
     # finish = []
     # queue = deque()
     # print("지도정렬 : " + str(road))
-
     # while len(finish) < N :
 
+    graph = {}
+    #그래로 전환하기
     for i in range(len(road)):
         start = road[i][0]        
         end = road[i][1]
-        length = road[i][2]
+        length = road[i][2] 
 
-        if answerdict[start] == 'none' :
-            if answerdict[end] == 'none' : continue
-            temp = answerdict[end] + length
-            answerdict[start] = temp
-        else:
-            temp = answerdict[start] + length
-            if answerdict[end] == 'none' or answerdict[end] > temp :
-                answerdict[end] = temp
+        graph[start] = graph.get(start,[]) + [(end,length)]
+        graph[end] = graph.get(end,[]) + [(start,length)]
+
     # 끝난 후
-    print(answerdict)
-    
-    for i in range(len(answerdict)):
-        if answerdict[i+1] <= K:
-            answer += 1
-
+    print(graph)
+    print(graph[1][0])
+    abc = graph[1][0]
+    print(abc[1])
     return answer
 
 
