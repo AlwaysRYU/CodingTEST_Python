@@ -88,3 +88,10 @@ from itertools import combinations
 
 for i in range(1,c):
     print(list(combinations(range(c),i)))
+
+
+listt = [[[1,2],[3,4]],[[5,6],[7,8]],[[9,10],[11,12]]]
+print("중복")
+print(listt[0][0][1])
+print()
+print()
