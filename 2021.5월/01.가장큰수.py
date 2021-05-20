@@ -5,6 +5,7 @@
 
 '''
 a1, a2 = [6, 10, 2], [3, 30, 34, 5, 9]
+a3 = [3,33,31,35,46,38,381,354,385]
 
 # 순열조합 사용시 임포트
 import itertools
@@ -14,9 +15,11 @@ def solution(num):
     num = list(map(str, num))
     # str 을 곱하기하면 9 -> 999 가 된다. 
     num.sort(key = lambda x : x*3, reverse = True) 
+    print(num)
     return str(int(''.join(num)))
 
-
+print(solution(a3))
+print(solution([38,381]))
 
 #시간초과,,, 다 시간초과 나오네 아무래도 일일히 하는것 힘든듯
 def solution2(numbers):

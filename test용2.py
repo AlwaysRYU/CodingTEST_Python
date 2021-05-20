@@ -95,3 +95,15 @@ print("중복")
 print(listt[0][0][1])
 print()
 print()
+
+print()
+print("뒤에 없을 때 정렬테스트")
+a = [30,31,32,34,38,36,35,37,376,378,387,361,366,365,361,360]
+b = [str(i) for i in a]
+print(b)
+# c = sorted(b,key = lambda x : x[1] f len(x) == 1  , reverse=True)
+c = sorted(b,reverse=True)
+print(c)
+dd = ["313131","333","387387387","383838"]
+dd.sort(reverse=True)
+print(dd)

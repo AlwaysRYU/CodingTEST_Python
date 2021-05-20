@@ -30,6 +30,10 @@
     https://programmers.co.kr/learn/courses/30/lessons/17679
     블록이 터지는 것을 어떻게 구현해야하는지,,
 
+    가장큰수 :
+    https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
+    재귀로 하면 너무 복잡해지고, 순열로하면 시간초과이다.
+    간단하게 푸는 방법은 str끼리 비교하는 것이었다.
 
 2. 해결함 & 막혔던 이유
     1. 수식 최대화 : lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 됨. 이걸몰라서 막힘 
