@@ -1,17 +1,12 @@
 1. 미해결
     배달 :  https://programmers.co.kr/learn/courses/30/lessons/12978?language=python3
+    
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
     어렵다.
-
-    행렬테두리 회전하기 : https://programmers.co.kr/learn/courses/30/lessons/77485?language=python3
-    접근은 좋았다. 구현을 잘 못했다.
 
     집합: https://programmers.co.kr/learn/courses/30/lessons/12915
 
     문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057?language=python3
-
-    N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/12953
-    이건 진짜 왜 안되는지 모르겠음
 
     예상 대진표 :
     약간 애매 하다.
@@ -21,7 +16,9 @@
     소수만들기 : https://programmers.co.kr/learn/courses/30/lessons/12977
 
     메뉴리뉴얼 : https://programmers.co.kr/learn/courses/30/lessons/72411
-
+    조합을 사용하는 방식
+    푼 사람들은 문자열에서 조합을 모조릳 뽑아서
+    생성되는 조합의 개수를 셌더라.
 
     이문제는 진짜 어렵다.
     lv 3추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
@@ -29,11 +26,24 @@
     프렌즈4블록 : 
     https://programmers.co.kr/learn/courses/30/lessons/17679
     블록이 터지는 것을 어떻게 구현해야하는지,,
+    
+    아까운 것:
+        가장큰수 :
+        https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
+        재귀로 하면 너무 복잡해지고, 순열로하면 시간초과이다.
+        간단하게 푸는 방법은 str끼리 비교하는 것이었다.
+        이게 가능했던 이유는 n의 한도가 정해져있었기 때문. (4자리까지)
 
-    가장큰수 :
-    https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
-    재귀로 하면 너무 복잡해지고, 순열로하면 시간초과이다.
-    간단하게 푸는 방법은 str끼리 비교하는 것이었다.
+        행렬테두리 회전하기 : 
+        https://programmers.co.kr/learn/courses/30/lessons/77485?language=python3
+        접근 하는 방식은 맞았다.
+        하지만 알고리즘을 작성함에 있어서 쉽게 풀어내지 못했다. 그렇기에 복잡하게 코드가 작성되었고, 오류가 났다.
+    
+        N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/12953
+        여러가지 테스트 케이스를 넣고 실행해도 맞게 나오는데 왜 틀렸는지 모르겠다.
+        이럴 때 좀 막막하다..
 
 2. 해결함 & 막혔던 이유
-    1. 수식 최대화 : lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 됨. 이걸몰라서 막힘 
+    1. 수식 최대화 : 
+        lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 바뀌게 된다.
+        리스트를 복사할 때는 copy 등을 이용해서 다르게 해야한다.  

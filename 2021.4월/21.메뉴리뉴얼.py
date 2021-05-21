@@ -59,10 +59,16 @@ def solution(orders, course):
     for k in course:
         candidates = []
         for menu_li in orders:
+            # orders의 문자열들을 
+            print("문자열 " + str(menu_li))
             for li in combinations(menu_li, k):
+                
                 res = ''.join(sorted(li))
+                print(res)
                 candidates.append(res)
+        print(candidates)
         sorted_candidates = Counter(candidates).most_common()
+        print(sorted_candidates)
         answer += [menu for menu, cnt in sorted_candidates if cnt > 1 and cnt == sorted_candidates[0][1]]
     return sorted(answer)
 

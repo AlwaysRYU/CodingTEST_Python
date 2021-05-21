@@ -85,7 +85,7 @@ def bikyo(str, listt):
         
 
 
-bikyo(a)
+# bikyo(a)
     
 
 print(solution([6,10,2]))

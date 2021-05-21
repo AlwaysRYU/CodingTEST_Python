@@ -9,25 +9,31 @@ a5 = [2,7,14] #>> 14
 a6 = [3,4,9,16] #>> 144
 
 def solution(arr):
+    print("해볼 거 : " + str(arr))
     arr.sort()
     answer = 1
     for i in range(len(arr)):
         for j in range(i+1, len(arr)):
             if (arr[j] % arr[i]) == 0 :
                 arr[j] = (arr[j] // arr[i])    
-        answer = answer * arr[i]
+
+    for i in range(len(arr)):
+        answer *= arr[i]
     return answer
 
 print(solution(a1))
-print(a2)
+# print(a2)
 print(solution(a2))
-print(a3)
+# print(a3)
 print(solution(a3))
 print(solution(a4))
 print(solution(a5))
 print(solution(a6))
-
 print(solution([5,9,8]))
+print(solution([5,5,5]))
+print(solution([1,1,1,1,1,1]))
+print(solution([99,11,9,3,33]))
+print(solution([5,10,2,4]))
 '''
 
 def solution(arr):

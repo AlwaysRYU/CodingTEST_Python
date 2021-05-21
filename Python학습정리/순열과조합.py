@@ -34,3 +34,8 @@ from itertools import combinations
 
 for i in range(1,c):
     print(list(combinations(range(c),i)))
+
+'''
+특징:
+    문자열 가능. 'abcd' -> 'a', 'b', 'c','d' 같이 가능하다.
+'''
