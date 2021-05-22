@@ -15,10 +15,7 @@
 
     소수만들기 : https://programmers.co.kr/learn/courses/30/lessons/12977
 
-    메뉴리뉴얼 : https://programmers.co.kr/learn/courses/30/lessons/72411
-    조합을 사용하는 방식
-    푼 사람들은 문자열에서 조합을 모조릳 뽑아서
-    생성되는 조합의 개수를 셌더라.
+    
 
     이문제는 진짜 어렵다.
     lv 3추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
@@ -42,6 +39,11 @@
         N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/12953
         여러가지 테스트 케이스를 넣고 실행해도 맞게 나오는데 왜 틀렸는지 모르겠다.
         이럴 때 좀 막막하다..
+
+        메뉴리뉴얼 : https://programmers.co.kr/learn/courses/30/lessons/72411
+        조합을 사용하는 방식
+        푼 사람들은 문자열에서 조합을 모조릳 뽑아서
+        생성되는 조합의 개수를 셌더라.
 
 2. 해결함 & 막혔던 이유
     1. 수식 최대화 : 
