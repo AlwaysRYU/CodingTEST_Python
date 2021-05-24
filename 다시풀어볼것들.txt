@@ -1,4 +1,8 @@
 1. 미해결
+    삼각달팽이
+    https://programmers.co.kr/learn/courses/30/lessons/68645?language=python3
+    풀 듯 말 듯 안풀리는 문제이다. 분명이 잘 한것 같은데 
+
     배달 :  https://programmers.co.kr/learn/courses/30/lessons/12978?language=python3
     
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3

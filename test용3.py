@@ -1,8 +1,3 @@
-s = "abcd"
+a = [[1], [2,3], [4,5,6], [7,8,9,10]]
 
-if "a" in s :
-    print("있음")
-
-import itertools
-
-print(list(itertools.combinations(s,2)))
+print(a[-2][-1])
