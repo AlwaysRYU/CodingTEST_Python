@@ -78,6 +78,20 @@ print()
     입력 : iterable자료형 (반복가능한 데이터 타입 / member를 하나씩 접근할 수 있는 데이터 타입)
 
 '''
+
+# sum : 반복가능한 객체의 요소 합
+'''
+의미 :
+    sum(iterable, start = 0)
+    iterable한 자료형을 받으며 numeric 한다.
+    인자로 들어온 iterable 내부 모든 요소의 합
+    start는 한 번 더 더해준다.
+특징 :
+'''
+print("sum : ")
+print(sum([2,2,2]))
+print(sum([2,2,2],2))
+
 # oct
 # open
 # ord
@@ -86,7 +100,7 @@ print()
 # round
 # sorted
 # str
-# sum
+
 # tuple
 # type
 # zip

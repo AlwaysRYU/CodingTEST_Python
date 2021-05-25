@@ -1,8 +1,4 @@
 1. 미해결
-    삼각달팽이
-    https://programmers.co.kr/learn/courses/30/lessons/68645?language=python3
-    풀 듯 말 듯 안풀리는 문제이다. 분명이 잘 한것 같은데 
-
     배달 :  https://programmers.co.kr/learn/courses/30/lessons/12978?language=python3
     
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
@@ -50,6 +46,10 @@
         생성되는 조합의 개수를 셌더라.
 
 2. 해결함 & 막혔던 이유
-    1. 수식 최대화 : 
+    수식 최대화 : 
         lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 바뀌게 된다.
         리스트를 복사할 때는 copy 등을 이용해서 다르게 해야한다.  
+
+    삼각달팽이 (5월 24일):
+        풀 듯 말 듯 안풀리는 문제이다. 분명이 잘 한것 같은데
+        이틀 째에 풀었다. 다음날 보자마자 잘못된게 보였고,

@@ -15,8 +15,8 @@ def solution(n):
     while temp <= n:
         maxnum += temp
         temp += 1
-
-    print(maxnum)
+    print( "N : " + str(n))
+    print("한계 : " + str(maxnum))
     NN = 1 # 번째
     while True :
         if NN > n : break
@@ -34,8 +34,8 @@ def solution(n):
         elif (NN % 3) == 2:
             # 2, 5, 8, 11 번째
             for i in range(n - (NN-1)):
-                if answer[-1-di][1+(2*di)+i] == 0:
-                    answer[-1-di][1+(2*di)+i] = number
+                if answer[-1-di][ 1 + (di) + i] == 0:
+                    answer[-1-di][1+(di)+i] = number
                     number += 1
             print(answer)
             NN += 1
@@ -46,20 +46,46 @@ def solution(n):
                 if answer[-2 -(di-1) -i ][-1-(di-1)] == 0:
                     answer[-2 -(di-1) -i ][-1-(di-1)] = number
                     number += 1
+            print(answer)
             NN += 1
             continue
-    return answer
+    real = []
+    for i in range(len(answer)):
+        real += answer[i]
+    return real
 
 n1, n2, n3 = 4,5,6
 
-print(solution(6))
+# print(solution(7))
 # print(solution(n1))
 # print(solution(n2))
 # print(solution(n3))
 
-# 고뇌의 흔적
-'''
 
+# 다른사람의 풀이
+def solution2(n):
+    dy=[1,0,-1]
+    dx=[0,1,-1]
+
+    b=[[0] * i for i in range(1,n+1)]
+    print(b)
+
+    x,y=0,0
+    num=1
+    d=0
+    
+    while num <= (n+1) * n // 2:
+        b[y][x]=num
+        ny=y+dy[d]
+        nx=x+dx[d]
+        num+=1
+        if 0 <= ny < n and 0<=nx<=ny and b[ny][nx]==0:y,x=ny,nx
+        else:d=(d+1)%3;y+=dy[d];x+=dx[d]
+    
+    return sum(b,[])
+# 고뇌의 흔적
+print(solution2(6))
+'''
 def solution(n):
     answer = []
     for i in range(n):
