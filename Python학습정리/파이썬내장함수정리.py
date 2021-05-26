@@ -29,6 +29,19 @@ print(all([]))
 '''
 print(any([""]))
 
+# bin : 전달받은 integer / longinteger 자료형의 값을 2진수 (binary)로 돌려준다.
+print()
+print("bin() : ")
+print(bin(10))
+
+print()
+
+# count : 문자열에서 해당하는 문자열이 포함되어있는지 계산해서 반환하는 함수이다.
+print()
+print("count() : ")
+print('Zack Snyder\'s justice league'.count(' '))
+
+print()
 
 # chr
 # dir
