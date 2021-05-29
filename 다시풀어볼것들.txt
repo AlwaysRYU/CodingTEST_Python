@@ -25,6 +25,10 @@
     블록이 터지는 것을 어떻게 구현해야하는지,,
     
     아까운 것:
+        순위 검색 (05.28.)
+        https://programmers.co.kr/learn/courses/30/lessons/72412
+        문제는통과하지만, 효율성에서 실패한다.
+
         가장큰수 :
         https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
         재귀로 하면 너무 복잡해지고, 순열로하면 시간초과이다.

@@ -1,5 +1,1 @@
-a = 'abcd'
-
-print(a.index('c')
-if 'c' in a:
-    print("true")
+print([2,3] + [1,2])
