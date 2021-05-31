@@ -1,4 +1,8 @@
 1. 미해결
+    프렌즈4블록 : 
+    https://programmers.co.kr/learn/courses/30/lessons/17679
+    접근과 생각은 좋았지만, 구현에 어려움을 느꼈다.
+
     배달 :  https://programmers.co.kr/learn/courses/30/lessons/12978?language=python3
     
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
@@ -20,9 +24,6 @@
     이문제는 진짜 어렵다.
     lv 3추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
 
-    프렌즈4블록 : 
-    https://programmers.co.kr/learn/courses/30/lessons/17679
-    블록이 터지는 것을 어떻게 구현해야하는지,,
     
     아까운 것:
         순위 검색 (05.28.)
