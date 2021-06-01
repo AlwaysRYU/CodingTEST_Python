@@ -36,3 +36,4 @@ print("위치는 ")
 print(binary_s(4,array) + 1)
 # print(binary_s(2,[0,1,2,3,4]))
 
+
