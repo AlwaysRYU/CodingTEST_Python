@@ -25,11 +25,20 @@
 
 # 2. for 문
 # for 변수 in 리스트 :
-
-
 exlist = ['one', 'two', 'three']
 for i in exlist:
     print(i)
+
+# 2-1. for else
+# 파이썬은 for else 를 쓸 수 있다.
+# for이 중간에 break로 끊기지 않고 끝까지 수행됐을 때 수행하는 코드이다. 
+for i in range(11):
+    if i == 4:
+        print("빠져나갔다.")
+        break
+else :
+    print("안빠져나가고 종료됨")
+print()
 
 
 # 3. range
