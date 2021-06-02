@@ -1,4 +1,4 @@
-1. 미해결
+미해결 문제 :
     프렌즈4블록 : 
     https://programmers.co.kr/learn/courses/30/lessons/17679
     접근과 생각은 좋았지만, 구현에 어려움을 느꼈다.
@@ -13,19 +13,15 @@
     문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057?language=python3
 
     예상 대진표 :
-    약간 애매 하다.
 
     비밀지도 : https://programmers.co.kr/learn/courses/30/lessons/17681?language=python3
 
     소수만들기 : https://programmers.co.kr/learn/courses/30/lessons/12977
-
     
-
-    이문제는 진짜 어렵다.
-    lv 3추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
-
+    추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
+    level 3 문제이다.
     
-    아까운 것:
+아까운 것:
         순위 검색 (05.28.)
         https://programmers.co.kr/learn/courses/30/lessons/72412
         문제는통과하지만, 효율성에서 실패한다.
@@ -50,11 +46,11 @@
         푼 사람들은 문자열에서 조합을 모조릳 뽑아서
         생성되는 조합의 개수를 셌더라.
 
-2. 해결함 & 막혔던 이유
+이후 해결한 문제  & 막혔던 이유 :
     수식 최대화 : 
-        lista = listb 이런식으로 복사할경우, append 와 같은 연산하면 둘다 바뀌게 된다.
+        lista = listb 이런식으로 복사할경우, append 와 같은 연산을 하면 둘다 바뀌게 된다.
         리스트를 복사할 때는 copy 등을 이용해서 다르게 해야한다.  
 
     삼각달팽이 (5월 24일):
         풀 듯 말 듯 안풀리는 문제이다. 분명이 잘 한것 같은데
-        이틀 째에 풀었다. 다음날 보자마자 잘못된게 보였고,
+        이틀 째에 풀었다. 다음날 보자마자 잘못된게 보였고, 바로 해결할 수 있었다.
