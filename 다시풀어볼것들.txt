@@ -21,6 +21,9 @@
     추석트래픽 : https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
     level 3 문제이다.
     
+    1로만들기 : 도서 p.217
+    다이나믹 프로그래밍이란? 한번 더 생각해 볼만한 문제이다.
+
 아까운 것:
         순위 검색 (05.28.)
         https://programmers.co.kr/learn/courses/30/lessons/72412
