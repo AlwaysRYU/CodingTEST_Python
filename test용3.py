@@ -14,3 +14,13 @@ if p.match("abc"):
 a = [1,2,3,4]
 print(a.pop(1))
 print(a)
+
+
+print()
+print()
+print()
+print()
+if "AA" < "AB" :
+    print("크다")
+else :
+    print("작다")

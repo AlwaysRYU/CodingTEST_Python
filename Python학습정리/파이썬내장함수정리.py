@@ -117,3 +117,7 @@ print(sum([2,2,2],2))
 # tuple
 # type
 # zip
+
+# upper / lower / isupper / islower
+s1 = "SpiderMan"
+print(s1.upper())
