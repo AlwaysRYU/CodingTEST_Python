@@ -10,6 +10,11 @@ print(match)
 if p.match("abc"):
     print("매치됨")
 
+p2 = re.compile('[A-Za-z]')
+
+if not p2.match("a"):
+    print("매치매치")
+
 
 a = [1,2,3,4]
 print(a.pop(1))
@@ -24,3 +29,5 @@ if "AA" < "AB" :
     print("크다")
 else :
     print("작다")
+
+print("-".upper())
