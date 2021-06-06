@@ -200,12 +200,23 @@ print()
 산술에서 신경쓸 것은  //은 몫, /은 나누기
 '''
 
-
-
 # 13. 문자열.replace(a,b) : 특정한 값 교체
 '''
 replace(a,b,c) : a를 b로 교체한다. c는횟수.
 문자열에서만 사용가능 
 '''
+
+
+# 14. 무한대 표시
+'''
+알고리즘 풀이시 최소값, 최대값 구할 때 사용하는 무한대.
+두가지 방법이 있다.
+math 를 임포트해서도 가능하다.
+'''
+# 무한대 float 만 가능하다.
+positive = float('inf')
+print(positive)
+negative = float('-inf')
+print(negative)
 
 

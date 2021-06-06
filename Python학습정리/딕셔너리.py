@@ -58,3 +58,9 @@ print(mydictionary.get('spiderman','없음'))
 # key에 해당하는것이 없을 경우, 오른쪽을 돌려준다.
 
 
+
+# for 를 통한 딕셔너리생성
+roads = { i : {} for i in range(6)}
+print(roads)
+roads2 = { i: float('inf') if i != 1 else 0 for i in range(1, 6) }
+print(roads2)

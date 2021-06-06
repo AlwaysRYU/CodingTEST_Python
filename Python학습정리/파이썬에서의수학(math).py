@@ -27,7 +27,6 @@ print(math.sqrt(math.pi))
 # * 제곱근이 정수로 떨어진다? : 약수의 개수가 홀수이다. <- 이거 유용하게 쓰일 듯
 
 
-
 # 분수식 표현 - 내장라이브러리 : Fractions
 from fractions import Fraction
 # 분수를 사용할  수 있다.
@@ -35,3 +34,8 @@ number1 = 1/3 # 1/2를 저장한다.
 number2 = Fraction(1,3)
 print(number1 == number2) # 같지않다.
 
+
+
+# 무한대 표현
+positive = math.inf
+negative = -math.inf
