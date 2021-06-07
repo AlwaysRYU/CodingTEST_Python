@@ -4,7 +4,8 @@
     접근과 생각은 좋았지만, 구현에 어려움을 느꼈다.
 
     배달 :  https://programmers.co.kr/learn/courses/30/lessons/12978?language=python3
-    
+    접근과 로직은 생각했으나 구현을 못함.
+
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
     어렵다.
 
@@ -29,6 +30,10 @@
         순위 검색 (05.28.)
         https://programmers.co.kr/learn/courses/30/lessons/72412
         문제는통과하지만, 효율성에서 실패한다.
+        
+        전화번호 목록 (06.07.)
+        https://programmers.co.kr/learn/courses/30/lessons/42577?language=python3
+        효율성에서 실패한다. 해시를 공부하고 나중에 다시한번 풀어보자.
 
         가장큰수 :
         https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
