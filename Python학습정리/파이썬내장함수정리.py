@@ -29,12 +29,29 @@ print(all([]))
 '''
 print(any([""]))
 
-# bin : 전달받은 integer / longinteger 자료형의 값을 2진수 (binary)로 돌려준다.
+# bin() : 이진수 변환 
+'''
+의미 : 
+    전달받은 integer / longinteger 자료형의 값을 2진수 (binary)로 돌려준다.
+'''
 print()
 print("bin() : ")
-print(bin(10))
-
+print(bin(50))
 print()
+# oct() : 8진수
+# hex() : 16진수
+# 다른 방법 : format() 내장함수
+#             여기서, #을 제거하면 맨 앞 접두어가 빠진 상태로 출력된다.
+value = 50
+b = format(value, '#b') #2진수
+o = format(value, '#o') #8진수
+h = format(value, '#x') #16진수
+print(b)
+print(o)
+print(h)
+# 다른 방법 2 : int('문자열' , 2) 
+print( int(format(value, '#o'), 8)) # 50을 출력
+
 
 # count : 문자열에서 해당하는 문자열이 포함되어있는지 계산해서 반환하는 함수이다.
 print()
@@ -77,7 +94,7 @@ print(a)
 print()
 
 # filter
-# hex
+
 # id
 # input
 # int
@@ -105,7 +122,6 @@ print("sum : ")
 print(sum([2,2,2]))
 print(sum([2,2,2],2))
 
-# oct
 # open
 # ord
 # pow
