@@ -31,3 +31,10 @@ else :
     print("작다")
 
 print("-".upper())
+
+print()
+print()
+print()
+
+
+print(4%3)
