@@ -1,6 +1,41 @@
 # 2개 이하로 다른 비트
 # https://programmers.co.kr/learn/courses/30/lessons/77885
 
+# 최종 제출 형 (나의풀이)
+def F3(x):
+    bina = "0" + bin(x)[2:]
+    ans = ""
+    for i in range(len(bina)-1, -1, -1):
+        if bina[i] == "0" :
+            ans = bina[:i] + "10" + bina[i+2:]
+            break
+    return int("0b" + ans , 2)
+
+def solution2(numbers):
+    answer = []
+    for i in numbers :
+        if (i%2) == 0:
+            answer.append(i+1)
+        else:
+            answer.append(F3(i))
+    return answer 
+
+# 다른 사람의 풀이
+
+# 다른사람의 풀이
+def solution3(numbers):
+    answer = []
+    for idx, val in enumerate(numbers):
+        answer.append(((val ^ (val+1)) >> 2) +val +1)
+
+    return answer
+
+# 나처럼 푼사람이 없다.
+# 일일히 하기는 힘들다는것을 았고, ^을 쓰려고했는데 다른사람은 잘썼네
+# 나는 이진법의 수학적 접근으로 풀었다.
+# 다른사람은 코딩으로 푼듯.
+
+
 # Ver. 1
 def F1(x):
     n = x + 1
@@ -10,6 +45,10 @@ def F1(x):
             break
         n = n + 1
     return n
+
+# for i in range(1, 51, 2):
+#     print(str(i) + " -> "+ str(F1(i)))
+
 # 이방법은 시간초과 뜬다......
 # 요즘 계속 시간초과 뜨네
 # 저 dif = bin(x6n).count("1")에서 문제가 되는 거 겠지.
@@ -64,32 +103,5 @@ def solution(numbers):
 # 수를 '만들'어야 하나..?
 # 짝수면 -> 맨끝만 바꾸면 땡임
 # 홀수면 -> 맨끝에 서부터 
-
-def F3(x):
-    bina = "0" + bin(x)[2:]
-    ans = ""
-    for i in range(len(bina)-1, -1, -1):
-        if bina[i] == "0" :
-            # del answer[0]
-            # answer.insert(0,0)
-            # answer.insert(0,1)
-            ans = "10" + ans[1:]
-            break
-        else:
-            # answer.insert(0,1)
-            ans = "1" + ans
-    return int("0b" + ans , 2)
-
-
-print(F3(7))
-
-def solution2(numbers):
-    answer = []
-    for i in numbers :
-        if (i%2) == 0:
-            answer.append(i+1)
-        else:
-                answer.append(F3(i))
-    return answer 
-
 print(solution2([2,7]))
+
