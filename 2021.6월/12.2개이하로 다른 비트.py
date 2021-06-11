@@ -21,8 +21,6 @@ def solution2(numbers):
     return answer 
 
 # 다른 사람의 풀이
-
-# 다른사람의 풀이
 def solution3(numbers):
     answer = []
     for idx, val in enumerate(numbers):
