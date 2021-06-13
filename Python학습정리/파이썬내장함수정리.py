@@ -121,13 +121,19 @@ print()
 print("sum : ")
 print(sum([2,2,2]))
 print(sum([2,2,2],2))
+print(sum(range(1,4))) # range도 가능하다.
 
 # open
 # ord
 # pow
 # range
 # round
+
 # sorted
+'''
+    정렬하는 함수, 리스트정리.py 참조
+'''
+
 # str
 
 # tuple

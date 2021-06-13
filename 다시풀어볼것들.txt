@@ -1,4 +1,9 @@
 미해결 문제 :
+    
+    소수 찾기
+    https://programmers.co.kr/learn/courses/30/lessons/12921
+    제1차 방통대작전 /  조금 고민을 해야하는 문제다.
+
     프렌즈4블록 : 
     https://programmers.co.kr/learn/courses/30/lessons/17679
     접근과 생각은 좋았지만, 구현에 어려움을 느꼈다.

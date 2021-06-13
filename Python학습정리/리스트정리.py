@@ -63,8 +63,9 @@ print(sorted(b, key = lambda x : x[1]))
 
 # 여러 개로도 가능하다.
 sorted(["abcd","sun","aun","gdull","eugd","quee","auee","quaa"], key = lambda x : (x[0],x[1]))
-
-
+# 이런식으로 STR을 정렬하는것도 가능하다.
+''.join(sorted("abcd", reverse=True))
+print(sorted("fdjgkadklfl", reverse=True))
 
 # 팁1 : 반복문으로 이중리스트 만들기
 a = [[0 for j in range(2)] for i in range(3)]
