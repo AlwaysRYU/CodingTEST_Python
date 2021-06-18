@@ -219,4 +219,24 @@ print(positive)
 negative = float('-inf')
 print(negative)
 
-
+# if문 한줄로 사용하기
+print("if 문 사용법 " )
+if x > 0 :
+    value = 10
+else :
+    value = 20
+#을, 한줄로 표현하기
+value = 10 if x > 0 else 20
+# 또,
+alpha = 0
+if alpha > 7 :
+    beta = 999 
+elif alpha == 7 :
+    beta = 99
+else :
+    beta = 0
+#를 ,한줄로 표현하면 (elif를 표현하는 것이다.)
+beta = 999 if alpha > 7 else ( beta == 99 if alpha == 7 else 0 )
+# 이걸한다. 만약 A면, A가 아니면 else 구문을 한다.
+beta = {alpha > 7: 999, alpha < 7: 0}.get(True, 99)
+# 또는, 이렇게 표현가능하다.
