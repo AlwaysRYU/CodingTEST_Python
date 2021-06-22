@@ -1,4 +1,7 @@
 미해결 문제 :
+    큰수만들기
+    https://programmers.co.kr/learn/courses/30/lessons/42883?language=python3
+    생각을 못ㅎㅁ
     
     소수 찾기
     https://programmers.co.kr/learn/courses/30/lessons/12921
