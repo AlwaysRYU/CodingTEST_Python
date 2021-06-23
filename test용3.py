@@ -38,3 +38,5 @@ print()
 
 
 print(4%3)
+
+print(sum([1,2,3]))
