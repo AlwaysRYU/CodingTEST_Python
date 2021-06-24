@@ -17,8 +17,7 @@
     후보키 : https://programmers.co.kr/learn/courses/30/lessons/42890?language=python3
     어렵다.
 
-    집합: https://programmers.co.kr/learn/courses/30/lessons/12915
-
+    
     문자열 압축 : https://programmers.co.kr/learn/courses/30/lessons/60057?language=python3
 
     예상 대진표 :
@@ -81,3 +80,6 @@
     삼각달팽이 (5월 24일):
         풀 듯 말 듯 안풀리는 문제이다. 분명이 잘 한것 같은데
         이틀 째에 풀었다. 다음날 보자마자 잘못된게 보였고, 바로 해결할 수 있었다.
+
+    문자열 내맘대로 정렬하기 : https://programmers.co.kr/learn/courses/30/lessons/12915
+        시간이 지나서 푸니까 쉽게 풀었다.

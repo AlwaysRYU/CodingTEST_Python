@@ -41,3 +41,8 @@ print(4%3)
 
 print(sum([1,2,3]))
 print(min(1,2,3))
+print("abcd"[1])
+array = sorted([2,3,4,1])
+print(array)
+if "a" < "b" :
+    print(1234)
