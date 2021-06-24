@@ -11,6 +11,7 @@ def solution(board):
     dy = [ 1, 1, 0 ]
 
     maxx = 1
+
     def square(x,y,count) :
         hoak = [0,0,0]
         for i in range(3):
@@ -33,5 +34,30 @@ def solution(board):
 재귀는 여기서 쓰는 것이 아닌 것 같다.
 참신한 풀이방법을 봤다. 나중에 다시 해보자.
 '''
-print(solution([[0,1,1,1],[1,1,1,1],[1,1,1,1],[0,0,1,0]])) #9
-# print(solution([[0,0,1,1],[1,1,1,1]])) #4
+
+# 다른 나의 풀이
+def solution2(B) :
+    maxx = 1
+    allzero = True
+    if sum(B[0]) != 0 :
+        allzero = False
+    for i in range(1, len(B)):
+        if sum(B[i]) != 0 :
+            allzero = False
+        for j in range(1, len(B[0])):
+            if B[i][j] == 0 :
+                continue
+            if B[i-1][j-1] != 0 and B[i][j-1] != 0 and B[i-1][j] != 0 :
+                B[i][j] = min(B[i-1][j-1], B[i][j-1], B[i-1][j]) + 1
+                if maxx < B[i][j] :
+                    maxx =B[i][j]
+    if allzero == True :
+        return 0
+    return maxx * maxx
+# 한케이스가 틀린다.
+# 모든 요소가 0인 경우.
+# 이렇게 리스트 형태를 바꾸는 방법은 기억해 두도록 하자.
+
+print(solution2([[0,1,1,1],[1,1,1,1],[1,1,1,1],[0,0,1,0]])) #9
+print(solution2([[0,0,1,1],[1,1,1,1]])) #4
+print(solution2([[1,0],[0,0]]))

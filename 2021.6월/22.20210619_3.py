@@ -1,6 +1,3 @@
-
-
-
 def solution(S):
     N = S.count("a")
     if N == 0 :
