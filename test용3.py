@@ -46,3 +46,8 @@ array = sorted([2,3,4,1])
 print(array)
 if "a" < "b" :
     print(1234)
+
+a = ["1", "2", "3", "4" ]
+
+for i in (2,a):
+    print(i)
