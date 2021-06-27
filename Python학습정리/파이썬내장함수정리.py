@@ -33,6 +33,9 @@ print(any([""]))
 '''
 의미 : 
     전달받은 integer / longinteger 자료형의 값을 2진수 (binary)로 돌려준다.
+팁1 : 자동으로 자리를 맞춰서 OR연산을 해준다.
+    print('OR연산')
+    print(bin(arr1[i] | arr2[i]))
 '''
 print()
 print("bin() : ")
