@@ -11,6 +11,7 @@ def solution(arr):
     def gumsa(x,y,n):
         bunri = False
         Yes = arr[x][y]
+        print("왼쪽위의 수 " + str(Yes))
         if n == 1: # n이 1일 경우에는 answer에다가 값을 넣는다.
             print(str(x) + " " + str(y) + "는 분리되지 않는다.")
             if Yes == 0 :
@@ -35,6 +36,7 @@ def solution(arr):
                     answer[1] += 1
 
     gumsa(0,0,NN)
+    print("으악")
     gumsa(NN,0,NN)
     gumsa(0, NN, NN)
     gumsa(NN,NN,NN)
