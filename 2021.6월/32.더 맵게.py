@@ -6,4 +6,10 @@
 
 def solution(scoville, K):
     answer = 0
+
+    
     return answer
+
+
+
+# 20210630  더 맵게 / 쿼드 압축 점검

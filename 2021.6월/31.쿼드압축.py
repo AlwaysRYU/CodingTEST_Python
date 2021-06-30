@@ -5,14 +5,13 @@ def solution(arr):
     answer = [0,0]
     NN = len(arr[0])//2
     print(NN)
-    # global ZeroN = 0
-    # global OneN = 0
 
     def gumsa(x,y,n):
         bunri = False
         Yes = arr[x][y]
-        print("왼쪽위의 수 " + str(Yes))
+        print(str(x) + str(y) + " 왼쪽위의 수 " + str(Yes))
         if n == 1: # n이 1일 경우에는 answer에다가 값을 넣는다.
+            print("N은 1이다.")
             print(str(x) + " " + str(y) + "는 분리되지 않는다.")
             if Yes == 0 :
                 answer[0] += 1
@@ -36,10 +35,19 @@ def solution(arr):
                     answer[1] += 1
 
     gumsa(0,0,NN)
-    print("으악")
+    print()
+    print("--")
+    print()
     gumsa(NN,0,NN)
+    print()
+    print("--")
+    print()
     gumsa(0, NN, NN)
-    gumsa(NN,NN,NN)
+    print()
+    print("--")
+    print()
+    gumsa(NN,NN,NN) 
+    print(str(NN) + " 을 확인하세요")
     return answer
 
 A1 = [[1,1,0,0],[1,0,0,0],[1,0,0,1],[1,1,1,1]]
