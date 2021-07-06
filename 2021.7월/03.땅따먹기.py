@@ -28,6 +28,17 @@ def solution(land):
 print(solution([[4, 3, 2, 1], [2, 2, 2, 1], [6, 6, 6, 4], [8, 7, 6, 5]]))
 # 효율성 통과, 하지만 위와 같은 반례가 있다.
 # 중복된 경우에는 다음 것까지 생각해서 해야 하는 것이다.
-
-
 # 생각을 다시해보자. 충분히 풀수 있는 문제다.
+
+def solution2(Arr) :
+    for i in range(1,len(Arr)):
+        Arr[i][0] += max(Arr[i-1][1],Arr[i-1][2],Arr[i-1][3])
+        Arr[i][1] += max(Arr[i-1][0],Arr[i-1][2],Arr[i-1][3])
+        Arr[i][2] += max(Arr[i-1][1],Arr[i-1][0],Arr[i-1][3])
+        Arr[i][3] += max(Arr[i-1][1],Arr[i-1][2],Arr[i-1][0])
+
+    return max(Arr[-1][0],Arr[-1][1],Arr[-1][2],Arr[-1][3])
+
+print(solution2([[1,2,3,5],[5,6,7,8],[4,3,2,1]]))
+print(solution2([[4, 3, 2, 1], [2, 2, 2, 1], [6, 6, 6, 4], [8, 7, 6, 5]]))
+
