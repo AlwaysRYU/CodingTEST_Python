@@ -242,3 +242,8 @@ beta = 999 if alpha > 7 else ( beta == 99 if alpha == 7 else 0 )
 # 이걸한다. 만약 A면, A가 아니면 else 구문을 한다.
 beta = {alpha > 7: 999, alpha < 7: 0}.get(True, 99)
 # 또는, 이렇게 표현가능하다.
+
+
+# 15. 문자열 (str) 관련 함수
+# find -> 리스트의 index같은거
+"abcdefg".find("a") #하면 0이 출력된다.

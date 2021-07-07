@@ -51,3 +51,5 @@ a = ["1", "2", "3", "4" ]
 
 for i in (2,a):
     print(i)
+
+print("abcde".find("c"))
