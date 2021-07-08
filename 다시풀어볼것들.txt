@@ -65,7 +65,10 @@
         분명히 로직에는 오류가 없는 것같은데 왜 안되는 지모르겠다.   
         -> 오류가 있었다. 121 이후의 수에는 불가능함.
 
-        
+        무지의 먹방 라이브
+        https://programmers.co.kr/learn/courses/30/lessons/42891?language=python3
+        -> 시간초과 난다.
+
         소수만들기 : https://programmers.co.kr/learn/courses/30/lessons/12977
 
 
