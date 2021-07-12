@@ -16,8 +16,11 @@ def solution(n):
 
 # 다른사람의 풀이
 def nextSqure(n):
-    sqrt = n ** (1/2)
-
+    sqrt = n ** (1/2) # 루뜨 하는 방법..
+    print(sqrt)
     if sqrt % 1 == 0:
         return (sqrt + 1) ** 2
     return 'no'
+
+nextSqure(121)
+nextSqure(122)
