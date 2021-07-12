@@ -247,3 +247,10 @@ beta = {alpha > 7: 999, alpha < 7: 0}.get(True, 99)
 # 15. 문자열 (str) 관련 함수
 # find -> 리스트의 index같은거
 "abcdefg".find("a") #하면 0이 출력된다.
+
+
+
+# 16. 문자가 영어인지 알아볼 때
+strr = "ABD"
+for i in strr :
+    if i.isalpha() : # 알파벳인지 알아보는 방법 중에 이런 방법이 있다! 기억해두자.
