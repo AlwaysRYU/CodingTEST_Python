@@ -3,10 +3,6 @@
     https://programmers.co.kr/learn/courses/30/lessons/42883?language=python3
     생각을 못ㅎㅁ
     
-    소수 찾기
-    https://programmers.co.kr/learn/courses/30/lessons/12921
-    20210626에 다시 풀어보자. 실시간으로 바꿔주는 방법을 집합으로 표현하기
-
     프렌즈4블록 : 
     https://programmers.co.kr/learn/courses/30/lessons/17679
     접근과 생각은 좋았지만, 구현에 어려움을 느꼈다.
@@ -60,11 +56,6 @@
         내가 가지고 있는 고급 정렬 기술들을 시험받는 느낌.
         다음에 한번 더 풀어보자.
 
-        소수 찾기
-        https://programmers.co.kr/learn/courses/30/lessons/12921
-        분명히 로직에는 오류가 없는 것같은데 왜 안되는 지모르겠다.   
-        -> 오류가 있었다. 121 이후의 수에는 불가능함.
-
         무지의 먹방 라이브
         https://programmers.co.kr/learn/courses/30/lessons/42891?language=python3
         -> 시간초과 난다.
@@ -87,3 +78,6 @@
     비밀지도 : https://programmers.co.kr/learn/courses/30/lessons/17681?language=python3
         시간지나고 난뒤 풀었다.
     
+    소수 찾기
+    https://programmers.co.kr/learn/courses/30/lessons/12921
+    20210626에 다시 풀어보자. 실시간으로 바꿔주는 방법을 집합으로 표현하기
