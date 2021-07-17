@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - J01_test",
+            "request": "launch",
+            "mainClass": "J01_test",
+            "projectName": "PythonMASTER_7c1b3d16"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaCode",
+            "request": "launch",
+            "mainClass": "JavaCode",
+            "projectName": "PythonMASTER_7c1b3d16"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
