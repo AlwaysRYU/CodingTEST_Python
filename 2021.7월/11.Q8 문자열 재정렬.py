@@ -28,4 +28,7 @@ print(solution(IN2))
 # 다른 풀이
 strr = "ABD"
 for i in strr :
-    if i.isalpha() : # 알파벳인지 알아보는 방법 중에 이런 방법이 있다! 기억해두자.
+    if i.isalpha() : 
+        break
+        
+        # 알파벳인지 알아보는 방법 중에 이런 방법이 있다! # 기억해두자
