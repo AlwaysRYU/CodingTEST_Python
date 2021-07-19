@@ -9,8 +9,9 @@ def solution(s):
     count = 0
     for i in range(1,Number) :
         temp = ""
-        for j in range(i,L,i):
-            print(s[j:j+i])
+        
+        for j in range(L//i):
+            print(s[j-i:j])
 
         # for j in range(0, L ,i) :
         #     if j == 0 :

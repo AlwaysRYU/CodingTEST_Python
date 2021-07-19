@@ -4,3 +4,6 @@
 # read me update
 # ssafy과제
 # 오늘 과제
+
+# 뱀
+# https://www.acmicpc.net/problem/3190
