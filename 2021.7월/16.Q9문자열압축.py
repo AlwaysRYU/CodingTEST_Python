@@ -1,42 +1,43 @@
 # 문자열 압축
 # https://programmers.co.kr/learn/courses/30/lessons/60057
 
+# 최종 나의 풀이
 def solution(s):
     answer = len(s)
     L = len(s)
     Number = answer // 2
-    print(Number)
     count = 0
-    for i in range(1,Number) :
+    for i in range(1,Number+1) :
         temp = ""
-        
-        for j in range(L//i):
-            print(s[j-i:j])
+        before = s[:i]
+        for j in range( 0 , L , i ):
+            jigum = s[j:j+i]
 
-        # for j in range(0, L ,i) :
-        #     if j == 0 :
-        #         before = s[:i]
-        #         count = 1
-        #         continue
-
-        #     jigum = s[ j : j + i]
-        #     print(jigum)
-        #     # if before == jigum :
-        #     #     count += 1
-        #     # else :
-        #     #     temp += str(count) +
-        #     #     before = jigum
-        #     #     count = 1
-
-        #     print(j)
-            #
-
-
-
+            if before == jigum :
+                count += 1
+            else :
+                if count == 1 :
+                    temp = temp + before
+                elif count != 0 :
+                    temp = temp + str(count) + before
+                before = jigum
+                count =1
+        if count == 1 :
+            temp = temp + before
+        else :
+            temp += str(count) + before
+        if len(temp) < answer :
+            answer = len(temp)
+        count = 0
     return answer
 
 print(solution("aabbaccc"))
 print(solution("ababcdcdababcdcd"))
-# print(solution("abcabcdede"))
-# print(solution("abcabcabcabcdededededede"))
-# print(solution("xababcdcdababcdcd"))
+print(solution("abcabcdede"))
+print(solution("abcabcabcabcdededededede"))
+print(solution("xababcdcdababcdcd"))
+print(solution("xxxxxxxxxxyyy"))
+
+# 다른사람의 풀이
+# 거의다 비슷하게 풀었다.
+# 있는대로 알고리즘을 구현만 하면 되는 문제.
