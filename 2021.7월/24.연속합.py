@@ -1,3 +1,5 @@
+# 연속합
+# https://www.acmicpc.net/problem/1912
 
 # 입력
 number = int(input())
