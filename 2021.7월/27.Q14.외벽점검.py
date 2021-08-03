@@ -28,6 +28,7 @@ def solution(n, weak, dist):
             position = weak[start] + worker[count -1]
 
             for index in range(start, start + length) :
+                
                 if position < weak[index]:
                     count += 1
                     if count > len(dist) :
