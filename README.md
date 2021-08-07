@@ -13,7 +13,7 @@
 2. 시간이 너무 걸리거나 해결 하지 못 했을 경우, 다시풀어볼것들.txt에 문제와 무엇 때문에 막혔는지 작성하고 다음에 시도한다.
 3. 하루에 Python으로 한 문제, Java로 한 문제 푸는 것을 목표로 한다.(2021.07.17. 추가 )  
     + 서식은 java는 J01, J02, J03 ...식으로 추가한다.
-    + Java의 능력향상을 위해 Java로 두 문제 풀자. 간헐 적으로 파이썬도 풀고 (2021.08.01.)
+    + 평일엔 Java, 주말엔 Python 을 이용하자.  (2021.08.01.)
 
 ## 최종목표   
 * 코딩테스트 전형을 반가워 할 수 있는 정도의 능력을 갖기
@@ -80,13 +80,13 @@
 
 ## 참고 서적 및 사이트
 * ### 도서  
-    이것이 취업을 위한 코딩테스트다 with 파이썬(한빛미디어)
+    + 이것이 취업을 위한 코딩테스트다 with 파이썬(한빛미디어)
 * ### 웹 사이트 :    
-    프로그래머스의 코딩테스트 문제 (https://programmers.co.kr/)   
-    삼성 SW Expert 아카데미 (https://swexpertacademy.com/main/main.do)      
-    백준(https://www.acmicpc.net/)
-    백준의 SW역량테스트 기출 문제 + code.plus 문제집
-    https://www.acmicpc.net/workbook/view/1152
+    + 프로그래머스의 코딩테스트 문제 (https://programmers.co.kr/)   
+    + 삼성 SW Expert 아카데미 (https://swexpertacademy.com/main/main.do)      
+    + 백준(https://www.acmicpc.net/)
+    + 백준의 SW역량테스트 기출 문제 + code.plus 문제집 (https://www.acmicpc.net/workbook/view/1152)
+    + 정보 올림피아드 (http://jungol.co.kr/)
  
  ***
  
