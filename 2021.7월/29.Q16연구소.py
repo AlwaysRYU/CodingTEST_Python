@@ -53,6 +53,7 @@ def dfs(count) :
         # 안전영역의 최댓값 계산
         result = max(result, get_score)
         return
+        
     for i in range(n) :
         for j in range(m) :
             if data[i][j] == 0:
