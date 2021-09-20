@@ -29,30 +29,30 @@
 
 
 아까운 것:
-        순위 검색 (05.28.)
-        https://programmers.co.kr/learn/courses/30/lessons/72412
+        검색순위  (05.28.)
+        
         문제는통과하지만, 효율성에서 실패한다.
         
-        전화번호 목록 (06.07.)
-        https://programmers.co.kr/learn/courses/30/lessons/42577?language=python3
+         (06.07.)
+        
         효율성에서 실패한다. 해시를 공부하고 나중에 다시한번 풀어보자.
 
         가장큰수 :
-        https://programmers.co.kr/learn/courses/30/lessons/42746?language=python3
+        
         재귀로 하면 너무 복잡해지고, 순열로하면 시간초과이다.
         간단하게 푸는 방법은 str끼리 비교하는 것이었다.
         이게 가능했던 이유는 n의 한도가 정해져있었기 때문. (4자리까지)
 
         행렬테두리 회전하기 : 
-        https://programmers.co.kr/learn/courses/30/lessons/77485?language=python3
+        
         접근 하는 방식은 맞았다.
         하지만 알고리즘을 작성함에 있어서 쉽게 풀어내지 못했다. 그렇기에 복잡하게 코드가 작성되었고, 오류가 났다.
     
-        N개의 최소공배수 : https://programmers.co.kr/learn/courses/30/lessons/12953
+        N개의 최소공배수 : 
         여러가지 테스트 케이스를 넣고 실행해도 맞게 나오는데 왜 틀렸는지 모르겠다.
         이럴 때 좀 막막하다..
 
-        메뉴리뉴얼 : https://programmers.co.kr/learn/courses/30/lessons/72411
+        메뉴리뉴얼 : 
         조합을 사용하는 방식
         푼 사람들은 문자열에서 조합을 모조릳 뽑아서
         생성되는 조합의 개수를 셌더라.
@@ -63,10 +63,8 @@
         다음에 한번 더 풀어보자.
 
         무지의 먹방 라이브
-        https://programmers.co.kr/learn/courses/30/lessons/42891?language=python3
+        
         -> 시간초과 난다.
-
-        소수만들기 : https://programmers.co.kr/learn/courses/30/lessons/12977
 
 
 이후 해결한 문제  & 막혔던 이유 :
