@@ -11,7 +11,8 @@
 
 ### 내용   
 1. 하루에 한 번 코딩 문제를 풀기
-2. 혼자 해결하지 못 한 경우, 리스트를 만들어서 정리해놓기
+2. 혼자 해결하지 못 한 경우, 리스트를 만들어서 정리해놓기 
+[푼 문제 정리 파일](https://github.com/AlwaysRYU/Daily_CodingTEST/blob/master/%ED%91%BC%EB%AC%B8%EC%A0%9C%20%EC%A0%95%EB%A6%AC.md)
 
 ### 파일 & 폴더명 규칙
 |이름| 내용|
