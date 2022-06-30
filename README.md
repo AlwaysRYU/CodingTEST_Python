@@ -31,9 +31,9 @@
     SSAFY 6기 1학기 파이널 프로젝트 기간입니다.
 * 2021.12.03.   
     개발 블로그를 개설함에 따라 레퍼지토리를 깔끔하게 개편합니다.
-* 2022.03.20.
+* 2022.03.20.   
     1년이 지남에 따라 폴더를 년도 별로 구분합니다.
-* 2022.06.26
+* 2022.06.26    
     SQL 문제도 하나씩 풀기로 합니다.
 
 
@@ -47,3 +47,5 @@
 - 백준(https://www.acmicpc.net/)
 - 백준의 SW역량테스트 기출 문제 + code.plus 문제집 (https://www.acmicpc.net/workbook/view/1152)
 - 정보 올림피아드 (http://jungol.co.kr/)
+- SQL 연습 사이트 (https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
+- Hackers SQL (https://www.hackerrank.com/domains/sql?badge_type=sql&filters%5Bstatus%5D%5B%5D=unsolved)
