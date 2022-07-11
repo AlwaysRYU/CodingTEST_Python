@@ -1,6 +1,6 @@
 # Weather Observation Station 18
 
-# 
+# 문제
 a는 북위도(STATION의 LAT_N)의 최소값과 같습니다.
 b는 서부 경도(STATION의 LONG_W)의 최소값과 같습니다.
 c는 북위도(STATION의 LAT_N)의 최대값과 같습니다.
